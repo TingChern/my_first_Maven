@@ -1,0 +1,30 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>tw.tivchen.java</groupId>
+	<artifactId>my_first_Maven</artifactId>
+	<version>1.0</version>
+	<packaging>jar</packaging>
+
+	<name>my_first_Maven</name>
+	<url>http://maven.apache.org</url>
+	<!-- pom.xml做完任何改動別忘了update project才會生效，快速鍵Alt+F5勾選要update的專案 -->
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<!-- 在這邊設定compiler版本 -->
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+
+	</properties>
+
+	<dependencies>
+		<!-- 要加入外部Jar檔，從這邊開始貼dependencies標籤 -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+</project>
